@@ -1,50 +1,80 @@
-# Welcome to your Expo app 👋
+# Animated Movie App 🎬
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern, high-performance movie discovery application built with **React Native**, **Expo**, and **Appwrite**. This app features smooth animations, a beautiful UI powered by NativeWind, and a robust backend integration for user profiles and saved movies.
 
-## Get started
+## 🚀 Features
 
-1. Install dependencies
+- **Movie Discovery**: Explore trending, popular, and top-rated movies.
+- **Rich UI/UX**: Smooth animations using `react-native-reanimated` and `lucide-react-native` icons.
+- **Dynamic Routing**: Leveraging `expo-router` for seamless navigation.
+- **User Authentication & Database**: Powered by **Appwrite** for managing user profiles, saved movies, and ratings.
+- **Styling**: Utility-first styling with **NativeWind** (Tailwind CSS for React Native).
+- **Glassmorphism**: Beautiful blur effects using `expo-blur`.
+- **Image Optimization**: Fast image loading with `expo-image`.
 
+## 🛠️ Tech Stack
+
+- **Framework**: [Expo](https://expo.dev/) (React Native)
+- **Navigation**: [Expo Router](https://docs.expo.dev/router/introduction/)
+- **Styling**: [NativeWind](https://www.nativewind.dev/)
+- **Animations**: [React Native Reanimated](https://docs.swmansion.com/react-native-reanimated/)
+- **Backend**: [Appwrite](https://appwrite.io/)
+- **Icons**: [Lucide React Native](https://lucide.dev/) & Expo Vector Icons
+- **Language**: TypeScript
+
+## 📦 Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or later)
+- npm or yarn
+- Expo Go app on your mobile device or an emulator (Android Studio / Xcode)
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone <your-repo-url>
+   cd animated_movie_app
+   ```
+
+2. **Install dependencies**
    ```bash
    npm install
    ```
 
-2. Start the app
-
-   ```bash
-   npx expo start
+3. **Set up Environment Variables**
+   Create a `.env` file in the root directory and add your credentials (refer to `.env.example` if available or use the following template):
+   ```env
+   EXPO_PUBLIC_MOVIE_API_KEY=your_movie_api_key
+   EXPO_PUBLIC_APPWRITE_PROJECT_ID=your_project_id
+   EXPO_PUBLIC_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
+   EXPO_PUBLIC_APPWRITE_DATABASE_ID=your_db_id
+   EXPO_PUBLIC_APPWRITE_COLLECTION_ID=your_collection_id
+   # Add other collection IDs as needed
    ```
 
-In the output, you'll find options to open the app in a
+### Running the App
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+Start the development server:
 
 ```bash
-npm run reset-project
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- Press **`a`** for Android
+- Press **`i`** for iOS
+- Press **`w`** for Web
+- Scan the QR code with **Expo Go** to run on a physical device.
 
-## Learn more
+## 📂 Project Structure
 
-To learn more about developing your project with Expo, look at the following resources:
+- `app/`: Contains the main application routes (Expo Router).
+- `components/`: Reusable UI components.
+- `constants/`: Theme colors, API endpoints, and static data.
+- `interfaces/`: TypeScript type definitions.
+- `assets/`: Images, fonts, and local media.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 📄 License
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This project is licensed under the MIT License.
